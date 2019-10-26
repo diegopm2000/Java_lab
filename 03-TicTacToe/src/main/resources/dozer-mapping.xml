@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+      http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<configuration>
+		<custom-converters>
+			<converter type="es.poc.domain.tictactoe.core.util.BoardCustomConverter">
+				<class-a>es.poc.domain.tictactoe.core.Board</class-a>
+				<class-b>es.poc.domain.tictactoe.core.Board</class-b>
+			</converter>
+		</custom-converters>
+	</configuration>
+	
+	<mapping>
+		<class-a>es.poc.domain.tictactoe.core.Game</class-a>
+		<class-b>es.poc.domain.tictactoe.core.Game</class-b>		
+	</mapping>
+
+	<mapping>
+		<class-a>es.poc.domain.tictactoe.core.PieceX</class-a>
+		<class-b>es.poc.domain.tictactoe.core.PieceX</class-b>
+		<field>
+			<a>pieceType</a>
+			<b>pieceType</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>es.poc.domain.tictactoe.core.PieceO</class-a>
+		<class-b>es.poc.domain.tictactoe.core.PieceO</class-b>
+		<field>
+			<a>pieceType</a>
+			<b>pieceType</b>
+		</field>
+	</mapping>
+	
+	
+</mappings>
