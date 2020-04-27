@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+     
+    <bean id="person" class="com.helloworldspring.beans.Person">
+      <!-- Default mode, passing all parameters -->
+      <constructor-arg value="1"></constructor-arg>
+      <constructor-arg value="Jhon"></constructor-arg>
+      <constructor-arg value="Doe"></constructor-arg>
+
+      <!-- Passing only one parameter -->
+      <!-- <constructor-arg value="1"></constructor-arg> -->
+
+      <!-- Passing only one parameter and type (could be util in coonstructor polymorphism -->
+      <!-- <constructor-arg type="int" value="1"></constructor-arg> -->
+
+      <!-- Passing the index -->
+      <!-- <constructor-arg index="0" value="1"></constructor-arg>
+      <constructor-arg index="1" value="Jhon"></constructor-arg>
+      <constructor-arg index="2" value="Doe"></constructor-arg> -->
+    </bean>
+    
+</beans> 
