@@ -1,16 +1,19 @@
 package com.helloworldspring;
 
+import com.helloworldspring.beans.AppConfig;
 import com.helloworldspring.beans.World;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("com/helloworldspring/xml/beans.xml");
+        // ApplicationContext appContext = new ClassPathXmlApplicationContext("com/helloworldspring/xml/beans.xml");
+        ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
         
         // Alternative using the Class
         World myWorld = (World) appContext.getBean(World.class);
