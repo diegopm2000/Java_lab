@@ -12,12 +12,12 @@ public class Person {
 
   @PostConstruct
   public void init() {
-    System.out.println("Inicialización del Bean Person");
+    System.out.println("Initialization of Bean Person");
   }
 
   @PreDestroy
   public void destroy() {
-    System.out.println("Destrucción del Bean Person");
+    System.out.println("Destruction of Bean Person");
   }
 
   public int getId() {

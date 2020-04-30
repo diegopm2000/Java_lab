@@ -1,19 +1,14 @@
-package com.springlifecycle.beans;
+package com.springlifecycleinterfaces.beans;
 
-public class Person {
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.DisposableBean;
+
+public class Person implements InitializingBean, DisposableBean {
 
   private int id;
   private String name;
   private String surname;
   private Country country;
-
-  public void init() {
-    System.out.println("Initialization of Bean Person");
-  }
-
-  public void destroy() {
-    System.out.println("Destruction of Bean Person");
-  }
 
   public int getId() {
     return this.id;
@@ -46,5 +41,15 @@ public class Person {
 
   public void setCountry(Country country) {
     this.country = country;
+  }
+
+  @Override
+  public void afterPropertiesSet() throws Exception {
+    System.out.println("Before the initialization of bean Person");
+  }
+
+  @Override
+  public void destroy() throws Exception {
+    System.out.println("After of the destructino of bean Person");
   }
 }
