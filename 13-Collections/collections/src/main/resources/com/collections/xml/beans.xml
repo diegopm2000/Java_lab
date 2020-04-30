@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+     
+    <bean id="person" class="com.collections.beans.Person">
+      <property name="id" value="1"></property>
+      <property name="name" value="Andrew"></property>
+      <property name="surname" value="Ryan"></property>
+      <property name="country" ref="country"></property>
+    </bean>
+      
+    <bean id="country" class="com.collections.beans.Country">
+      <property name="name" value="NoWhere"></property>
+      <property name="cities">
+        <list>
+          <ref bean="city1"/>
+          <ref bean="city2"/>
+          <ref bean="city3"/>
+        </list>
+      </property>
+    </bean>
+
+    <bean id="city1" class="com.collections.beans.City">
+      <property name="name" value="Rapture"></property>
+    </bean>
+
+    <bean id="city2" class="com.collections.beans.City">
+      <property name="name" value="Cydonia"></property>
+    </bean>
+
+    <bean id="city3" class="com.collections.beans.City">
+      <property name="name" value="Dunwall"></property>
+    </bean>
+
+
+</beans> 
