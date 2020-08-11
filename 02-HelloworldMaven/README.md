@@ -36,13 +36,8 @@ $ mvn compile
 
 ### 2. Executing the project
 
-Open the project in the workspace, the Java Overview will be open and in the App.java, will appear the commanda "Run" and "Debug". 
+Using IntelliJ Idea, go to App.java and run the file
 
-![run the program](images/image1.png)
+### 3. Execute the test
 
-Click on the "Run" button
-
-```shell
-/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/diego/workdir/proyectos-GitHub/laboratories/java_lab/02-HelloworldMaven/helloworldmaven/target/classes com.helloworld.App 
-Hello World!
-```
+The project comes with a minimal test. You can execute it going to AppTest.java and running the test.
