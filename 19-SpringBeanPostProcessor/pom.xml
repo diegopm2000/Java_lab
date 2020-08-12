@@ -9,8 +9,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>beanpostprocessor</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/diegopm2000-lab/java_lab/tree/develop/19-SpringBeanPostProcessor</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
