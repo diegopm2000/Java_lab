@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean id="player1" class="com.sample.beans.Player">
+        <property name="id" value="1"></property>
+        <property name="name" value="Messi"></property>
+        <property name="team" ref="barcelona"></property>
+        <property name="shirt" ref="shirt1"></property>
+    </bean>
+
+    <bean id="barcelona" class="com.sample.beans.Barcelona">
+    </bean>
+
+    <bean id="juventus" class="com.sample.beans.Juventus">
+    </bean>
+
+    <bean id="shirt1" class="com.sample.beans.Shirt">
+        <property name="id" value="1"></property>
+        <property name="number" value="10"></property>
+        <property name="mark" ref="mark1"></property>
+    </bean>
+
+    <bean id="mark1" class="com.sample.beans.Mark">
+        <property name="id" value="1"></property>
+        <property name="name" value="Mark-1"></property>
+    </bean>
+</beans> 
