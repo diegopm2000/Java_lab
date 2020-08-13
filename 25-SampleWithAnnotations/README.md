@@ -1,3 +1,3 @@
-# Spring Sample with XML
+# Spring Sample with Annotations
 
-Spring Complete Sample using configuration in XML file
+Spring Complete Sample using configuration based on Annotations
