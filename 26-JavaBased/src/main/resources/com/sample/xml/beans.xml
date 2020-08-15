@@ -8,9 +8,4 @@
 
     <context:component-scan base-package="com.sample"></context:component-scan>
 
-    <bean id="player1" class="com.sample.beans.Player">
-        <property name="id" value="1"></property>
-        <property name="name" value="Messi"></property>
-    </bean>
-
 </beans> 
