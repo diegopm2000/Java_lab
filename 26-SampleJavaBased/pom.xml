@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>samplejavabased</name>
-  <url>https://github.com/diegopm2000-lab/java_lab/tree/develop/26-JavaBased</url>
+  <url>https://github.com/diegopm2000-lab/java_lab/tree/develop/26-SampleJavaBased</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
