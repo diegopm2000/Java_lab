@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.sample"/>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/sample_db"/>
+        <property name="username" value="sample_user"/>
+        <property name="password" value="password"/>
+    </bean>
+
+    <bean id="mark3" class="com.sample.beans.Mark">
+        <property name="id" value="3"/>
+        <property name="name" value="Mark 3"/>
+    </bean>
+
+    <bean id="team1" class="com.sample.beans.Team">
+        <property name="id" value="1"/>
+        <property name="name" value="Barcelona"/>
+    </bean>
+
+    <bean id="shirt1" class="com.sample.beans.Shirt">
+        <property name="id" value="1"/>
+        <property name="number" value="11"/>
+        <property name="mark" ref="mark3"/>
+    </bean>
+
+    <bean id="player1" class="com.sample.beans.Player">
+        <property name="id" value="2"/>
+        <property name="name" value="Iniesta"/>
+        <property name="team" ref="team1"/>
+        <property name="shirt" ref="shirt1"/>
+    </bean>
+
+</beans> 
