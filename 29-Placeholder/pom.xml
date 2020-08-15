@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sample</groupId>
-  <artifactId>sampleSpringInsertsInMysql</artifactId>
+  <artifactId>sampleSpringPlaceholder</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>sampleSpringInsertsInMysql</name>
-  <url>https://github.com/diegopm2000-lab/java_lab/tree/develop/28-SpringInsertsInMysql</url>
+  <name>sampleSpringPlaceholder</name>
+  <url>https://github.com/diegopm2000-lab/java_lab/tree/develop/29-Placeholder</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
