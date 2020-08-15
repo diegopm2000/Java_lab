@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+
+  sample-db:
+    image: mysql:8.0.20
+    container_name: sample-db
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: sample
+      MYSQL_DATABASE: sample_db
+      MYSQL_USER: sample_user
+      MYSQL_PASSWORD: password
+    ports:
+      - 3306:3306
+    volumes:
+      - sample-mysqldb:/var/lib/mysql
+
+volumes:
+  sample-mysqldb:
