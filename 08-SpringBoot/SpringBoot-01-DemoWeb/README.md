@@ -47,6 +47,9 @@ server.port = 8090
 
 Adding a dependency called devtools in the pom.xml, we will obtain the auto restart of the server during the development.
 
-```
-
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+</dependency>
 ```
