@@ -49,7 +49,7 @@ public class DemoconsoleApplication implements CommandLineRunner {
 		System.out.println("HelloWorld SpringBoot Console!");
 	}
 }
-```
+``
 
 And then, running the application again:
 
