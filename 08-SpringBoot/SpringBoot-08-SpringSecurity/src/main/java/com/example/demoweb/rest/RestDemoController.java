@@ -1,8 +1,3 @@
-# Spring Boot REST
-
-Added REST Support
-
-```java
 package com.example.demoweb.rest;
 
 import com.example.demoweb.model.Person;
@@ -40,4 +35,3 @@ public class RestDemoController {
     }
 
 }
-```
