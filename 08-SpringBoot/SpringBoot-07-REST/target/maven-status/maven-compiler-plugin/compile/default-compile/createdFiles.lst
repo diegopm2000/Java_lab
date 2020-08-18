@@ -1,5 +1,0 @@
-com/example/demoweb/model/Person.class
-com/example/demoweb/rest/RestDemoController.class
-com/example/demoweb/DemowebApplication.class
-com/example/demoweb/repo/IPersonRepo.class
-com/example/demoweb/controller/DemoController.class
