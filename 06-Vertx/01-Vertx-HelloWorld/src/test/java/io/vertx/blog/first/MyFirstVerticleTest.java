@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package io.vertx.blog.first;
 
 import io.vertx.core.Vertx;
 import io.vertx.ext.unit.Async;
