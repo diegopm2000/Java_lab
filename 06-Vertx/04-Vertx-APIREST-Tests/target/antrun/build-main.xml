@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <exec spawn="false" dir="/home/diego/workdir/GitHub-Personal/Laboratories/java_lab/06-Vertx/04-Vertx-APIREST-Tests/target" executable="bash">
+    <arg value="-c"/>
+    <arg value="ps ax | grep -i &apos;my-first-app&apos; | awk &apos;NR==1{print $1}&apos; | xargs kill -SIGTERM"/>
+  </exec>
+</target>
+</project>
