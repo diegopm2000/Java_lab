@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+
+  vertx-mongodb:
+    image: mongo:latest
+    container_name: vertx-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      #- MONGO_INITDB_ROOT_USERNAME=${MONGO_USER}
+      #- MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD}
+      - MONGO_INITDB_DATABASE=whiskies
+    volumes:
+      - vertx-mongodb:/data/db
+    networks:
+      - vertx-network
+
+volumes:
+  vertx-mongodb:
+
+networks:
+  vertx-network:
+    name: vertx-network
+    driver: bridge
