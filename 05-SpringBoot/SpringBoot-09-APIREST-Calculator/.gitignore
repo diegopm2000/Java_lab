@@ -34,3 +34,6 @@ build/
 
 # Maven
 target
+
+# Sonarqube
+.sonar_lock
