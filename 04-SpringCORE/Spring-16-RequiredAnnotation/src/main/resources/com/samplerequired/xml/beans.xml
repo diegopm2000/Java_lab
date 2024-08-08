@@ -6,15 +6,16 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
      
     <bean id="messi" class="com.samplerequired.beans.Player">
-        <property name="number" value="10"></property>
-        <property name="name" value="Lionel Messi"></property>
+        <property name="number" value="10"/>
+        <property name="name" value="Lionel Messi"/>
+        <!-- Uncomment this property to run the program successfully. If it is commented, the program will fail -->
         <!-- <property name="team" ref="barcelona"></property> -->
     </bean>
 
-    <bean id="barcelona" class="com.samplerequired.beans.Barcelona"></bean>
-    <bean id="juventus" class="com.samplerequired.beans.Juventus"></bean>
+    <bean id="barcelona" class="com.samplerequired.beans.Barcelona"/>
+    <bean id="juventus" class="com.samplerequired.beans.Juventus"/>
 
 </beans> 

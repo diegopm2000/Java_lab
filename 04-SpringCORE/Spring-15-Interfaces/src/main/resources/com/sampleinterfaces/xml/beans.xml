@@ -7,12 +7,12 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
      
     <bean id="messi" class="com.sampleinterfaces.beans.Player">
-        <property name="number" value="10"></property>
-        <property name="name" value="Lionel Messi"></property>
-        <property name="team" ref="barcelona"></property>
+        <property name="number" value="10"/>
+        <property name="name" value="Lionel Messi"/>
+        <property name="team" ref="barcelona"/>
     </bean>
 
-    <bean id="barcelona" class="com.sampleinterfaces.beans.Barcelona"></bean>
-    <bean id="juventus" class="com.sampleinterfaces.beans.Juventus"></bean>
+    <bean id="barcelona" class="com.sampleinterfaces.beans.Barcelona"/>
+    <bean id="juventus" class="com.sampleinterfaces.beans.Juventus"/>
 
 </beans> 

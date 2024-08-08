@@ -31,7 +31,6 @@ public class Person {
     this.surname = surname;
   }
 
-
   public Country getCountry() {
     return this.country;
   }

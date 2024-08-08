@@ -13,7 +13,7 @@ public class App
     public static void main( String[] args )
     {
         // ApplicationContext appContext = new ClassPathXmlApplicationContext("com/springwithannotations/xml/beans.xml");
-        ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        ConfigurableApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
         
         // Alternative using the Class
         World myWorld = (World) appContext.getBean(World.class);

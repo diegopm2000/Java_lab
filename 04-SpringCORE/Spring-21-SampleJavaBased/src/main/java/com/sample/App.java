@@ -18,7 +18,7 @@ public class App
         System.out.println("Elija un equipo: 1 - Barcelona, 2 - Juventus");
         int response = sc.nextInt();
 
-        ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        ConfigurableApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
         Player player = (Player) appContext.getBean("player1");
 
         switch (response) {

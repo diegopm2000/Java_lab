@@ -10,7 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("com/samplerequired/xml/beans.xml");
+        ConfigurableApplicationContext appContext = new ClassPathXmlApplicationContext("com/samplerequired/xml/beans.xml");
 
         Player player = (Player) appContext.getBean("messi");
         System.out.println(player.getName() + " - " + player.getTeam().show() + " - " + player.getNumber());

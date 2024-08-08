@@ -6,20 +6,20 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context.xsd">
      
-    <bean class="com.beanpostprocessor.beans.SampleBeanPostProcessor"></bean>
+    <bean class="com.beanpostprocessor.beans.SampleBeanPostProcessor"/>
     
     <bean id="person" class="com.beanpostprocessor.beans.Person" autowire="byName">
-      <property name="id" value="1"></property>
-      <property name="name" value="Andrew"></property>
-      <property name="surname" value="Ryan"></property>
+      <property name="id" value="1"/>
+      <property name="name" value="Andrew"/>
+      <property name="surname" value="Ryan"/>
     </bean>
       
     <bean id="country" class="com.beanpostprocessor.beans.Country" autowire="byName">
-      <property name="name" value="NoWhere"></property>
+      <property name="name" value="NoWhere"/>
     </bean>
 
     <bean id="city" class="com.beanpostprocessor.beans.City">
-      <property name="name" value="Rapture"></property>
+      <property name="name" value="Rapture"/>
     </bean>
 
 </beans> 

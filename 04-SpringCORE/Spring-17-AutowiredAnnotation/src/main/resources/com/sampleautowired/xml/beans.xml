@@ -6,8 +6,8 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
-    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 
     <!-- Alternative to the annotations instead of use the upper annotations-->
     <!--
@@ -15,14 +15,14 @@
     -->
 
     <bean id="messi" class="com.sampleautowired.beans.Player">
-        <property name="number" value="10"></property>
-        <property name="name" value="Lionel Messi"></property>
+        <property name="number" value="10"/>
+        <property name="name" value="Lionel Messi"/>
         <!-- <property name="team" ref="barcelona"></property> -->
     </bean>
 
     <bean id="team" class="com.sampleautowired.beans.Barcelona">
-        <qualifier value="barcelonaqualifier"></qualifier>
+        <qualifier value="barcelonaqualifier"/>
     </bean>
-    <bean id="juventus" class="com.sampleautowired.beans.Juventus"></bean>
+    <bean id="juventus" class="com.sampleautowired.beans.Juventus"/>
 
 </beans> 

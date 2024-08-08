@@ -17,7 +17,7 @@ public class App
         System.out.println("Elija un equipo: 1 - Barcelona, 2 - Juventus");
         int response = sc.nextInt();
 
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("com/sample/xml/beans.xml");
+        ConfigurableApplicationContext appContext = new ClassPathXmlApplicationContext("com/sample/xml/beans.xml");
         Player player = (Player) appContext.getBean("player1");
 
         switch (response) {

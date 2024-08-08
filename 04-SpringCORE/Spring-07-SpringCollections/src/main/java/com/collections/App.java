@@ -11,16 +11,16 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("com/collections/xml/beans.xml");
+        ConfigurableApplicationContext appContext = new ClassPathXmlApplicationContext("com/collections/xml/beans.xml");
         
         Person myPerson = (Person) appContext.getBean("person");
 
-        String citynames = "";
+        StringBuilder cityNames = new StringBuilder();
         for (City city: myPerson.getCountry().getCities()) {
-            citynames += city.getName() + "-";
+            cityNames.append(city.getName()).append("-");
         }
 
-        System.out.println("* id: " + myPerson.getId() + ", name: " + myPerson.getName() + ", surname: " + myPerson.getSurname() + ", country: " + myPerson.getCountry().getName() + ", cities: " + citynames);
+        System.out.println("* id: " + myPerson.getId() + ", name: " + myPerson.getName() + ", surname: " + myPerson.getSurname() + ", country: " + myPerson.getCountry().getName() + ", cities: " + cityNames);
 
         ((ConfigurableApplicationContext) appContext).close();
     }

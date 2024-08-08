@@ -7,18 +7,18 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
      
     <bean id="person" class="com.springreference.beans.Person" name="personBeanAlt">
-      <property name="id" value="1"></property>
-      <property name="name" value="Andrew"></property>
-      <property name="surname" value="Ryan"></property>
-      <property name="country" ref="country"></property>
+      <property name="id" value="1"/>
+      <property name="name" value="Andrew"/>
+      <property name="surname" value="Ryan"/>
+      <property name="country" ref="country"/>
     </bean>
       
     <bean id="country" class="com.springreference.beans.Country">
-      <property name="name" value="NoWhere"></property>
+      <property name="name" value="NoWhere"/>
       <property name="city">
         <!-- Example of nested object -->
         <bean id="city" class="com.springreference.beans.City">
-          <property name="name" value="Rapture"></property>
+          <property name="name" value="Rapture"/>
         </bean>
       </property>
     </bean>

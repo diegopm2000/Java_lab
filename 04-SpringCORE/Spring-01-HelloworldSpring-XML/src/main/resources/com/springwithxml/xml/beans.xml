@@ -7,7 +7,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
      
     <bean id="world" class="com.springwithxml.beans.World">
-      <property name="greetings" value="Hello World Spring"></property>
+      <property name="greetings" value="Hello World Spring"/>
     </bean>
     
 </beans> 

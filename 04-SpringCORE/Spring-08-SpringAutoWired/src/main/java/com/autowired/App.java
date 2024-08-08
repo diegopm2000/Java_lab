@@ -10,7 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("com/autowired/xml/beans.xml");
+        ConfigurableApplicationContext appContext = new ClassPathXmlApplicationContext("com/autowired/xml/beans.xml");
         
         Person myPerson = (Person) appContext.getBean("person");
 

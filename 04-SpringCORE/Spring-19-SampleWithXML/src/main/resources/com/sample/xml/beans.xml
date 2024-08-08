@@ -8,10 +8,10 @@
 
 
     <bean id="player1" class="com.sample.beans.Player">
-        <property name="id" value="1"></property>
-        <property name="name" value="Messi"></property>
-        <property name="team" ref="barcelona"></property>
-        <property name="shirt" ref="shirt1"></property>
+        <property name="id" value="1"/>
+        <property name="name" value="Messi"/>
+        <property name="team" ref="barcelona"/>
+        <property name="shirt" ref="shirt1"/>
     </bean>
 
     <bean id="barcelona" class="com.sample.beans.Barcelona">
@@ -21,13 +21,13 @@
     </bean>
 
     <bean id="shirt1" class="com.sample.beans.Shirt">
-        <property name="id" value="1"></property>
-        <property name="number" value="10"></property>
-        <property name="mark" ref="mark1"></property>
+        <property name="id" value="1"/>
+        <property name="number" value="10"/>
+        <property name="mark" ref="mark1"/>
     </bean>
 
     <bean id="mark1" class="com.sample.beans.Mark">
-        <property name="id" value="1"></property>
-        <property name="name" value="Mark-1"></property>
+        <property name="id" value="1"/>
+        <property name="name" value="Mark-1"/>
     </bean>
 </beans> 

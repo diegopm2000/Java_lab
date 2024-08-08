@@ -8,9 +8,9 @@
      
     <bean id="person" class="com.injectbyconstructor.beans.Person">
       <!-- Default mode, passing all parameters -->
-      <constructor-arg value="1"></constructor-arg>
-      <constructor-arg value="Jhon"></constructor-arg>
-      <constructor-arg value="Doe"></constructor-arg>
+      <constructor-arg value="1"/>
+      <constructor-arg value="John"/>
+      <constructor-arg value="Doe"/>
 
       <!-- Passing only one parameter -->
       <!-- <constructor-arg value="1"></constructor-arg> -->

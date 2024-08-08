@@ -10,7 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("com/springwithxml/xml/beans.xml");
+        ConfigurableApplicationContext appContext = new ClassPathXmlApplicationContext("com/springwithxml/xml/beans.xml");
         
         // Alternative using the Class
         World myWorld = (World) appContext.getBean(World.class);

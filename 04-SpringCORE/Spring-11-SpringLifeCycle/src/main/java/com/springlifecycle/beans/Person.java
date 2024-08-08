@@ -7,13 +7,7 @@ public class Person {
   private String surname;
   private Country country;
 
-  public void init() {
-    System.out.println("Initialization of Bean Person");
-  }
-
-  public void destroy() {
-    System.out.println("Destruction of Bean Person");
-  }
+  // Getters & Setters
 
   public int getId() {
     return this.id;
@@ -39,12 +33,21 @@ public class Person {
     this.surname = surname;
   }
 
-
   public Country getCountry() {
     return this.country;
   }
 
   public void setCountry(Country country) {
     this.country = country;
+  }
+
+  // Life cycle
+
+  public void init() {
+    System.out.println("Initialization of Bean Person");
+  }
+
+  public void destroy() {
+    System.out.println("Destruction of Bean Person");
   }
 }

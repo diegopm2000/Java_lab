@@ -7,19 +7,19 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
      
     <bean id="person" class="com.injectbyreference.beans.Person">
-      <property name="id" value="1"></property>
-      <property name="name" value="Andrew"></property>
-      <property name="surname" value="Ryan"></property>
-      <property name="country" ref="country"></property>
+      <property name="id" value="1"/>
+      <property name="name" value="Andrew"/>
+      <property name="surname" value="Ryan"/>
+      <property name="country" ref="country"/>
     </bean>
       
     <bean id="country" class="com.injectbyreference.beans.Country">
-      <property name="name" value="NoWhere"></property>
-      <property name="city" ref="city"></property>
+      <property name="name" value="NoWhere"/>
+      <property name="city" ref="city"/>
     </bean>
 
     <bean id="city" class="com.injectbyreference.beans.City">
-      <property name="name" value="Rapture"></property>
+      <property name="name" value="Rapture"/>
     </bean>
     
 </beans> 

@@ -10,6 +10,8 @@ public class Person implements InitializingBean, DisposableBean {
   private String surname;
   private Country country;
 
+  // Getters & Setters
+
   public int getId() {
     return this.id;
   }
@@ -34,7 +36,6 @@ public class Person implements InitializingBean, DisposableBean {
     this.surname = surname;
   }
 
-
   public Country getCountry() {
     return this.country;
   }
@@ -42,6 +43,8 @@ public class Person implements InitializingBean, DisposableBean {
   public void setCountry(Country country) {
     this.country = country;
   }
+
+  // Life cycle
 
   @Override
   public void afterPropertiesSet() throws Exception {

@@ -9,17 +9,17 @@
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
      
     <bean id="person" class="com.springpostconstructpredestroy.beans.Person" autowire="byName">
-      <property name="id" value="1"></property>
-      <property name="name" value="Andrew"></property>
-      <property name="surname" value="Ryan"></property>
+      <property name="id" value="1"/>
+      <property name="name" value="Andrew"/>
+      <property name="surname" value="Ryan"/>
     </bean>
       
     <bean id="country" class="com.springpostconstructpredestroy.beans.Country" autowire="byName">
-      <property name="name" value="NoWhere"></property>
+      <property name="name" value="NoWhere"/>
     </bean>
 
     <bean id="city" class="com.springpostconstructpredestroy.beans.City">
-      <property name="name" value="Rapture"></property>
+      <property name="name" value="Rapture"/>
     </bean>
 
 </beans> 
