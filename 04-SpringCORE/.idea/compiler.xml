@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="autowiredannotation" />
+        <module name="autowired" />
+        <module name="springpostconstructpredestroy" />
+        <module name="interfaces" />
+        <module name="stereotypes" />
+        <module name="lazyloading" />
+        <module name="springwithannotations" />
+        <module name="springreference" />
+        <module name="springscopes" />
+        <module name="sampleSpringPlaceholder" />
+        <module name="springlifecycle" />
+        <module name="springinjectnested" />
+        <module name="sampleSpringMysql" />
+        <module name="injectbyconstructor" />
+        <module name="springlifecycleinterfaces" />
+        <module name="samplewithxml" />
+        <module name="sampleSpringInsertsInMysql" />
+        <module name="collections" />
+        <module name="springwithxml" />
+        <module name="samplejavabased" />
+        <module name="requiredannotation" />
+        <module name="beanpostprocessor" />
+        <module name="samplewithannotations" />
+        <module name="injectbyreference" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

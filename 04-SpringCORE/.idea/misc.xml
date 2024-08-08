@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Spring-01-HelloworldSpring-XML/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-02-HelloworldSpring-Annotations/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-03-SpringInjectByConstructor/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-04-SpringInjectByReference/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-05-SpringInjectNested/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-06-SpringReference/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-07-SpringCollections/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-08-SpringAutoWired/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-09-SpringScopes/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-10-SpringLazyLoading/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-11-SpringLifeCycle/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-12-SpringPostConstructYPreDestroy/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-13-SpringLifeCycleInterfaces/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-14-SpringBeanPostProcessor/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-15-Interfaces/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-16-RequiredAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-17-AutowiredAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-18-Stereotypes/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-19-SampleWithXML/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-20-SampleWithAnnotations/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-21-SampleJavaBased/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-22-SpringMysql/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-23-SpringInsertsInMysql/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-24-Placeholder/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

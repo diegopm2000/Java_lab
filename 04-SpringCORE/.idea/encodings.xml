@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Spring-01-HelloworldSpring-XML/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-01-HelloworldSpring-XML/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-02-HelloworldSpring-Annotations/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-02-HelloworldSpring-Annotations/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-03-SpringInjectByConstructor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-03-SpringInjectByConstructor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-04-SpringInjectByReference/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-04-SpringInjectByReference/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-05-SpringInjectNested/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-05-SpringInjectNested/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-06-SpringReference/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-06-SpringReference/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-07-SpringCollections/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-07-SpringCollections/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-08-SpringAutoWired/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-08-SpringAutoWired/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-09-SpringScopes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-09-SpringScopes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-10-SpringLazyLoading/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-10-SpringLazyLoading/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-11-SpringLifeCycle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-11-SpringLifeCycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-12-SpringPostConstructYPreDestroy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-12-SpringPostConstructYPreDestroy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-13-SpringLifeCycleInterfaces/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-13-SpringLifeCycleInterfaces/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-14-SpringBeanPostProcessor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-14-SpringBeanPostProcessor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-15-Interfaces/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-15-Interfaces/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-16-RequiredAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-16-RequiredAnnotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-17-AutowiredAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-17-AutowiredAnnotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-18-Stereotypes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-18-Stereotypes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-19-SampleWithXML/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-19-SampleWithXML/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-20-SampleWithAnnotations/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-20-SampleWithAnnotations/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-21-SampleJavaBased/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-21-SampleJavaBased/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-22-SpringMysql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-22-SpringMysql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-23-SpringInsertsInMysql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-23-SpringInsertsInMysql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-24-Placeholder/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-24-Placeholder/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
