@@ -9,20 +9,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoconsoleApplication implements CommandLineRunner {
+public class DemoconsoleApplicationAlt implements CommandLineRunner {
 
-	private static final Logger LOG = LoggerFactory.getLogger(DemoconsoleApplication.class);
+	private static final Logger LOG = LoggerFactory.getLogger(DemoconsoleApplicationAlt.class);
 
 	@Autowired
 	private IPersonService service;
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoconsoleApplication.class, args);
+		SpringApplication.run(DemoconsoleApplicationAlt.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		LOG.info("HelloWorld SpringBoot Console!");
+		LOG.info("HelloWorld SpringBoot Console...");
 		service.register("person test");
 	}
 }

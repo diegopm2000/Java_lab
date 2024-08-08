@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/SpringBoot-01-DemoWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-02-DemoConsole/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-03-DependencyInjection/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-04-Qualifier/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-05-MVC-Thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-06-SpringData/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-07-REST/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-08-SpringSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot-09-APIREST-Calculator/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

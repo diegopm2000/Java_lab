@@ -42,3 +42,10 @@ public class DemoController {
 </body>
 </html>
 ```
+
+## 3. Test the application
+
+```shell
+curl -X GET http://localhost:8080/greeting?name=Diego
+```
+

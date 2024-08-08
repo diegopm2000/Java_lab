@@ -9,9 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoconsoleApplication implements CommandLineRunner {
 
-	private static Logger LOG = LoggerFactory.getLogger(DemoconsoleApplication.class);
+	private static final Logger LOG = LoggerFactory.getLogger(DemoconsoleApplication.class);
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(DemoconsoleApplication.class, args);
 	}
 

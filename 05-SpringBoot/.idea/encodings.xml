@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SpringBoot-01-DemoWeb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-02-DemoConsole/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-03-DependencyInjection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-04-Qualifier/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-05-MVC-Thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-06-SpringData/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-07-REST/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-08-SpringSecurity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot-09-APIREST-Calculator/src/main/java" charset="UTF-8" />
+  </component>
+</project>
