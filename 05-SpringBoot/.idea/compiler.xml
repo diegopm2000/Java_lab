@@ -1,34 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="apirestcalculator" />
-        <module name="demoweb (4)" />
-        <module name="demoweb (3)" />
-        <module name="democonsole" />
-        <module name="demoweb (2)" />
-        <module name="demoweb (1)" />
-        <module name="springbootqualifier" />
-        <module name="demoweb" />
-        <module name="springbootdependencyinjection" />
-      </profile>
-    </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="apirestcalculator" options="-parameters" />
-      <module name="democonsole" options="-parameters" />
-      <module name="demoweb" options="-parameters" />
-      <module name="demoweb (1)" options="-parameters" />
-      <module name="demoweb (2)" options="-parameters" />
-      <module name="demoweb (3)" options="-parameters" />
-      <module name="demoweb (4)" options="-parameters" />
-      <module name="springbootdependencyinjection" options="-parameters" />
-      <module name="springbootqualifier" options="-parameters" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="democonsole" target="11" />
+      <module name="demoweb" target="22" />
+    </bytecodeTargetLevel>
   </component>
 </project>
