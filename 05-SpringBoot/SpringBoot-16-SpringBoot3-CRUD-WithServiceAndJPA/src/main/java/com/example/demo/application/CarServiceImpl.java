@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -70,8 +69,9 @@ public class CarServiceImpl implements CarService {
     public boolean delete(Long id) {
         if (carRepository.existsById(id)) {
             carRepository.deleteById(id);
+            return true;
         } else {
             throw new CarNotFoundException(id);
-        };
+        }
     }
 }

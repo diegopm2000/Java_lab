@@ -1,11 +1,9 @@
 package com.example.demo.infrastructure.persistence;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "CARS")
 public class CarEntity {
 
     @Id
@@ -14,6 +12,8 @@ public class CarEntity {
 
     private String model;
     private String brand;
+
+    @Column(name = "manufacture_year") // Change 'year' to 'manufacture_year'. In H2 year is a reserved word
     private Integer year;
 
     public Long getId() {
