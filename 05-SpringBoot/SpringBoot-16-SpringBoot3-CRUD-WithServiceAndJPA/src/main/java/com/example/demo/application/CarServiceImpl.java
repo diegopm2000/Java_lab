@@ -3,6 +3,8 @@ package com.example.demo.application;
 import com.example.demo.api.CarInputForUpdateDTO;
 import com.example.demo.api.CarNotFoundException;
 import com.example.demo.domain.Car;
+import com.example.demo.infrastructure.persistence.CarEntity;
+import com.example.demo.infrastructure.persistence.CarMapper;
 import com.example.demo.infrastructure.persistence.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,11 +12,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class CarServiceImpl implements CarService {
 
     private final CarRepository carRepository;
+    private final CarMapper carMapper = CarMapper.INSTANCE;
 
     @Autowired
     public CarServiceImpl(CarRepository carRepository) {
@@ -23,51 +27,51 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<Car> getAll() {
-        return this.carRepository.findAll();
+        return carRepository.findAll().stream()
+                .map(carMapper::toDomain)
+                .collect(Collectors.toList());
     }
 
     @Override
     public Car getById(Long id) {
-        Optional<Car> innerCar = this.carRepository.findById(id);
-
-        if (innerCar.isEmpty()) {
-            throw new CarNotFoundException(id);
-        }
-
-        return innerCar.get();
+        return carRepository.findById(id)
+                .map(carMapper::toDomain)
+                .orElseThrow(() -> new CarNotFoundException(id));
     }
 ;
     @Override
     public Car create(Car car) {
-        return this.carRepository.save(car);
+        CarEntity carEntity = carMapper.toEntity(car);
+        CarEntity savedEntity = carRepository.save(carEntity);
+        return carMapper.toDomain(savedEntity);
     }
 
     @Override
     public Car update(Long id, CarInputForUpdateDTO updateInputData) {
 
-        Optional<Car> innerCar = this.carRepository.findById(id);
+        CarEntity carEntity = carRepository.findById(id)
+                .orElseThrow(() -> new CarNotFoundException(id));
 
-        if (innerCar.isEmpty()) {
-            throw new CarNotFoundException(id);
+        if (updateInputData.getModel() != null) {
+            carEntity.setModel(updateInputData.getModel());
+        }
+        if (updateInputData.getBrand() != null) {
+            carEntity.setBrand(updateInputData.getBrand());
+        }
+        if (updateInputData.getYear() != null) {
+            carEntity.setYear(updateInputData.getYear());
         }
 
-        Car car = innerCar.get();
-
-        if (updateInputData.getModel() != null && !updateInputData.getModel().trim().isEmpty()) {
-            car.setModel(updateInputData.getModel().trim());
-        }
-        if (updateInputData.getBrand() != null && !updateInputData.getBrand().trim().isEmpty()) {
-            car.setBrand(updateInputData.getBrand().trim());
-        }
-        if (updateInputData.getYear() != null && updateInputData.getYear() >= 1886) {
-            car.setYear(updateInputData.getYear());
-        }
-
-        return this.carRepository.save(car);
+        CarEntity updatedEntity = carRepository.save(carEntity);
+        return carMapper.toDomain(updatedEntity);
     }
 
     @Override
     public boolean delete(Long id) {
-        return this.carRepository.deleteById(id);
+        if (carRepository.existsById(id)) {
+            carRepository.deleteById(id);
+        } else {
+            throw new CarNotFoundException(id);
+        };
     }
 }
