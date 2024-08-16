@@ -2,7 +2,7 @@
 
 A spring boot 3 API REST CRUD implemented using Hexagonal Architecture & Domain Driven Design Approach.
 
-We have also used Apache Lomboz to avoid having to program the getters, setters and the parameterized constructor  
+We have also used the Lombok library to avoid having to program the getters, setters and the parameterized constructor  
 
 ## 1. Go to H2 console
 
