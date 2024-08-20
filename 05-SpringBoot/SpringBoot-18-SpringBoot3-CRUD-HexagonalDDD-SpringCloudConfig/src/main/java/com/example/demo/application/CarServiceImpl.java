@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 public class CarServiceImpl implements CarService {
 
     private final CarRepository carRepository;
-    private final CarMapper carMapper = CarMapper.INSTANCE;
 
     @Autowired
     public CarServiceImpl(CarRepository carRepository) {

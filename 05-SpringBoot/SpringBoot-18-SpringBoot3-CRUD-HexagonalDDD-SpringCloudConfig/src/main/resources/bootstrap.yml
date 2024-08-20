@@ -1,0 +1,8 @@
+spring:
+  config:
+    import: ${CONFIG_REMOTE_FILE:}
+
+# Logs of Spring Cloud Config
+logging:
+  level:
+    org.springframework.cloud: DEBUG

@@ -2,6 +2,7 @@ package com.example.demo.infrastructure.persistence;
 
 import com.example.demo.domain.model.Car;
 import com.example.demo.domain.repositories.CarRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,6 +15,7 @@ public class CarRepositoryImpl implements CarRepository {
     private final CarJpaRepository carJpaRepository;
     private final CarMapper carMapper;
 
+    @Autowired
     public CarRepositoryImpl(CarJpaRepository carJpaRepository, CarMapper carMapper) {
         this.carJpaRepository = carJpaRepository;
         this.carMapper = carMapper;
