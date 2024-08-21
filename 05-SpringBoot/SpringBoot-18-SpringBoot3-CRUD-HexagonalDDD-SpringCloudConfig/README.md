@@ -16,28 +16,38 @@ Put the JDBC URL, name and password set in application.yml
 
 ## 2. Configuration to use spring cloud config to load the configuration
 
-### 2.1 Use of a bootstrap.yml instead of application.yml
+### 2.1 Using of a bootstrap.yml instead of application.yml
 
 ```yml
 spring:
   config:
-    import: ${CONFIG_REMOTE_FILE:}
-
+    # Load Config from Spring Cloud Config Remote Server
+    import: http://localhost:8889/spring-crud-dev.yml
+    # Load Config from local file
+    # import: classpath:config.yml
 # Logs of Spring Cloud Config
 logging:
   level:
     org.springframework.cloud: DEBUG
 ```
 
-### 2.2 Use of a .env file
+We can choose how to load the config uncomenting the appropiate line.
 
-````shell
-CONFIG_REMOTE_FILE=http://localhost:8889/spring-crud-dev.yml
-````
+Uncomment this to load config from Sprint Cloud Config remote Server.  
 
-### 2.3 Spring cloud config 
+```yml
+import: http://localhost:8889/spring-crud-dev.yml
+```
 
-The Spring Cloud Config is mounted for testing purposes in the infra folder
+Or uncomment this to load config from config.yml local file
+
+```yml
+import: classpath:config.yml
+```
+
+### 2.3 Spring cloud config Server Configuration
+
+The Spring Cloud Config Server is mounted for testing purposes in the infra folder
 
 There is a docker-compose.yml with this dockerization of the server:
 

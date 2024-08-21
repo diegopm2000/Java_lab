@@ -1,7 +1,9 @@
 spring:
   config:
-    import: ${CONFIG_REMOTE_FILE:}
-
+    # Load Config from Spring Cloud Config Remote Server
+    import: http://localhost:8889/spring-crud-dev.yml
+    # Load Config from local file
+    # import: classpath:config.yml
 # Logs of Spring Cloud Config
 logging:
   level:
