@@ -6,6 +6,8 @@ We have also used the __Lombok library__ to avoid having to program the getters,
 
 And we have also used __Spring Cloud Config__ to manage the centralized Configuration.
 
+In this version, the configuration may be loaded from spring cloud config or from local project
+
 ## 1. Go to H2 console
 
 Go to this url
@@ -16,38 +18,28 @@ Put the JDBC URL, name and password set in application.yml
 
 ## 2. Configuration to use spring cloud config to load the configuration
 
-### 2.1 Using of a bootstrap.yml instead of application.yml
+### 2.1 Use of a bootstrap.yml instead of application.yml
 
 ```yml
 spring:
   config:
-    # Load Config from Spring Cloud Config Remote Server
-    import: http://localhost:8889/spring-crud-dev.yml
-    # Load Config from local file
-    # import: classpath:config.yml
+    import: ${CONFIG_REMOTE_FILE:}
+
 # Logs of Spring Cloud Config
 logging:
   level:
     org.springframework.cloud: DEBUG
 ```
 
-We can choose how to load the config uncomenting the appropiate line.
+### 2.2 Use of a .env file
 
-Uncomment this to load config from Sprint Cloud Config remote Server.  
+````shell
+CONFIG_REMOTE_FILE=http://localhost:8889/spring-crud-dev.yml
+````
 
-```yml
-import: http://localhost:8889/spring-crud-dev.yml
-```
+### 2.3 Spring cloud config 
 
-Or uncomment this to load config from config.yml local file
-
-```yml
-import: classpath:config.yml
-```
-
-### 2.3 Spring cloud config Server Configuration
-
-The Spring Cloud Config Server is mounted for testing purposes in the infra folder
+The Spring Cloud Config is mounted for testing purposes in the infra folder
 
 There is a docker-compose.yml with this dockerization of the server:
 
