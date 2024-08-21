@@ -1,8 +1,0 @@
-spring:
-  config:
-    import: ${USE_REMOTE_CONFIG:true} == 'true' ? ${CONFIG_REMOTE_FILE} : classpath:/config/application.yml
-
-# Logs of Spring Cloud Config
-logging:
-  level:
-    org.springframework.cloud: DEBUG
